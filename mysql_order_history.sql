@@ -24,7 +24,8 @@ CREATE TABLE orders(
     total_shipping_cost BIGINT NOT NULL,
     total_shopping_amount BIGINT NOT NULL,
     service_charge BIGINT NOT NULL,
-    total_amount BIGINT NOT NULL
+    total_amount BIGINT NOT NULL,
+    created_at TIMESTAMP NOT NULL
 );
 
 DESC orders;
