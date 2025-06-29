@@ -72,6 +72,13 @@ INSERT INTO order_details(id, order_id, product_id, product_name, product_weight
 
 SELECT * FROM order_details;
 
+-- query by id di 2 table masing-masing
+SELECT * FROM orders WHERE id = 234;
+SELECT * FROM order_details WHERE order_id = 234;
+
+-- query by id di 2 table dengan join
+SELECT * FROM orders o JOIN order_details od ON o.id = od.order_id WHERE o.id = 234;
+
 
 
 
